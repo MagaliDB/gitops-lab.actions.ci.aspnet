@@ -29,13 +29,13 @@ namespace BoardGamesInventory.Controllers
       {
         return NotFound();
       }
-      GameDetailViewModel vm = new()
-      {
-        Id = game.Id,
-        Name = game.Name,
-        Price = game.Price.Amount,
-        Publisher = game.Publisher.Name
-      };
+ //     GameDetailViewModel vm = new()
+ //     {
+ //       Id = game.Id,
+ //       Name = game.Name,
+ //       Price = game.Price.Amount,
+ //       Publisher = game.Publisher.Name
+ //     };
       return View(model: vm);
     }
 
